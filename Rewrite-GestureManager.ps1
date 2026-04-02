@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+$gesturesPath = "C:\Temp\2026\kinect\kinect\My project\Assets\Scripts\Gestures"
+
+$script = @'
+using System.Collections.Generic;
 using UnityEngine;
 using EduMotion.Core;
 using EduMotion.Kinect;
@@ -184,3 +187,7 @@ namespace EduMotion.Gestures
         }
     }
 }
+'@
+
+Set-Content -Path "$gesturesPath\GestureManager.cs" -Value $script -Encoding UTF8
+Write-Host "GestureManager.cs rewritten."

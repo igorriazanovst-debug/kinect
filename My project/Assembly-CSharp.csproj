@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\Scripts\Core\RewardSystem.cs" />
     <Compile Include="Assets\Scripts\Gestures\GestureTypes.cs" />
+    <Compile Include="Assets\Scripts\Kinect\UDPKinectProvider.cs" />
     <Compile Include="Assets\Scripts\UI\GameViews.cs" />
   </ItemGroup>
   <ItemGroup>

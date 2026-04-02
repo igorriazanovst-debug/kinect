@@ -1,4 +1,7 @@
-﻿using System;
+$kinectPath = "C:\Temp\2026\kinect\kinect\My project\Assets\Scripts\Kinect"
+
+$script = @'
+using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using EduMotion.Core;
@@ -16,7 +19,7 @@ namespace EduMotion.Kinect
         [SerializeField] private int _udpPort = 7777;
 
         [Header("Kinect V1 Settings")]
-        [Tooltip("РРЅРґРµРєСЃ СЃРµРЅСЃРѕСЂР° (0 вЂ” РїРµСЂРІС‹Р№ РїРѕРґРєР»СЋС‡С‘РЅРЅС‹Р№)")]
+        [Tooltip("Индекс сенсора (0 — первый подключённый)")]
         [SerializeField] private int _sensorIndex    = 0;
         [SerializeField, Range(-27, 27)] private int _elevationAngle = 0;
 
@@ -74,10 +77,9 @@ namespace EduMotion.Kinect
 
         private void Update()
         {
-            if (_provider == null) return;
-
             if (!IsConnected)
             {
+                // Для UDP — проверяем появление данных
                 if (_provider is UDPKinectProvider)
                 {
                     var data = _provider.GetPrimarySkeleton();
@@ -103,4 +105,7 @@ namespace EduMotion.Kinect
         }
     }
 }
+'@
 
+Set-Content -Path "$kinectPath\KinectManager.cs" -Value $script -Encoding UTF8
+Write-Host "KinectManager.cs updated."
