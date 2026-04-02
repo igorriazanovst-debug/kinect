@@ -8,5 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 429f161398060fc42a4b35de6b305e9a
+  - enabled: 1
+    path: Assets/Scenes/Game_Traffic.unity
+    guid: 518cd7a6cc199dc449ca8e475a0d80cc
+  - enabled: 1
+    path: Assets/Scenes/Game_Crossing.unity
+    guid: f786ad2ce1033ca4e94ac7daab197154
+  - enabled: 1
+    path: Assets/Scenes/Game_Ecology.unity
+    guid: 7dabfaf3c0eb1e941abdeb2bdfa1a4bd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}

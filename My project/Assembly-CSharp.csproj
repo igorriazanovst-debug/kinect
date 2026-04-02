@@ -52,10 +52,8 @@
     <Compile Include="Assets\Scripts\Kinect\SkeletonData.cs" />
     <Compile Include="Assets\Scripts\Kinect\KinectManager.cs" />
     <Compile Include="Assets\Scripts\UI\SkeletonDebugView.cs" />
-    <Compile Include="Assets\Scripts\UI\CrossingView.cs" />
     <Compile Include="Assets\Scripts\UI\RewardScreenUI.cs" />
     <Compile Include="Assets\Scripts\Games\CrossingGame.cs" />
-    <Compile Include="Assets\Scripts\UI\TrafficLightView.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Core\EventBus.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuUI.cs" />
@@ -66,7 +64,6 @@
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\Scripts\Core\RewardSystem.cs" />
     <Compile Include="Assets\Scripts\Gestures\GestureTypes.cs" />
-    <Compile Include="Assets\Scripts\UI\EcologyView.cs" />
     <Compile Include="Assets\Scripts\UI\GameViews.cs" />
   </ItemGroup>
   <ItemGroup>
