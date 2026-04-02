@@ -11,14 +11,14 @@ namespace EduMotion.Gestures
 
         [Header("Thresholds")]
         [SerializeField] private float _raiseThreshold = 0.10f;
-        [SerializeField] private float _stepThreshold  = 0.15f;
-        [SerializeField] private float _turnThreshold  = 0.20f;
-        [SerializeField] private float _stopArmSpan    = 0.35f;
+        [SerializeField] private float _stepThreshold  = 0.40f;
+        [SerializeField] private float _turnThreshold  = 0.25f;
+        [SerializeField] private float _stopArmSpan    = 0.80f;
 
         [Header("Smoothing & Hold")]
         [SerializeField] private float _smoothFactor = 0.25f;
-        [SerializeField] private float _holdDuration = 0.4f;
-        [SerializeField] private float _cooldown      = 0.8f;
+        [SerializeField] private float _holdDuration = 0.50f;
+        [SerializeField] private float _cooldown      = 1.00f;
 
         private SkeletonData _skeleton;
         private readonly Dictionary<GestureType, float> _holdTimers = new Dictionary<GestureType, float>();
@@ -167,7 +167,7 @@ namespace EduMotion.Gestures
         private void CheckStepForward()
         {
             float avgFoot = (_sFootL.z + _sFootR.z) * 0.5f;
-            HandleGestureHold(GestureType.StepForward, (avgFoot - _sHipC.z) > _stepThreshold);
+            HandleGestureHold(GestureType.StepForward, (_sHipC.z - avgFoot) > _stepThreshold);
         }
 
         private void CheckTurn()
@@ -184,3 +184,7 @@ namespace EduMotion.Gestures
         }
     }
 }
+
+
+
+

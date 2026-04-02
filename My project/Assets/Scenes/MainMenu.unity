@@ -386,12 +386,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EduMotion.Gestures.GestureManager
   _raiseThreshold: 0.1
-  _stepThreshold: 0.15
-  _turnThreshold: 0.2
-  _stopArmSpan: 0.35
+  _stepThreshold: 0.55
+  _turnThreshold: 0.25
+  _stopArmSpan: 0.8
   _smoothFactor: 0.25
-  _holdDuration: 0.4
-  _cooldown: 0.8
+  _holdDuration: 0.5
+  _cooldown: 1
 --- !u!114 &98345412
 MonoBehaviour:
   m_ObjectHideFlags: 0

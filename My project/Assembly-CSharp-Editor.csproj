@@ -49,10 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\GameScenesSetup.cs" />
+    <Compile Include="Assets\Editor\AddBootstrapToGameScenes.cs" />
+    <Compile Include="Assets\Editor\FixGestureThresholds.cs" />
     <Compile Include="Assets\Editor\FixMainMenuText.cs" />
     <Compile Include="Assets\Editor\AudioManagerSetup.cs" />
+    <Compile Include="Assets\Editor\FixGameScenes.cs" />
     <Compile Include="Assets\Editor\BuildSettingsSetup.cs" />
     <Compile Include="Assets\Editor\MainMenuUISetup.cs" />
+    <Compile Include="Assets\Editor\GestureDebugWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
